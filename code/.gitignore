@@ -1,0 +1,8 @@
+#compled source
+*.o
+*.exe
+
+#log file
+*.log
+
+

@@ -1,0 +1,28 @@
+ !=============================
+ !model parameters
+ !=============================
+  451  2001  1501                ! nz, nx (grid points), nt (timesteps)
+  0.5000002E-03  4.9999999E-03   ! dt (seconds), h (km)
+  15                             ! npml
+ !=============================
+ !visco-related parameters
+ !=============================
+           3                   ! nq
+  15.0   30.0   60.0           ! relq(nq) (Hz)
+ !============================
+ !miscellaneous  parameters
+ !============================
+  1                            ! isnap
+  1500                         ! itsnap (timesteps)
+  100                          ! itshow (timesteps)
+ !============================
+ !source parameters
+ !============================
+  1                            ! nsr
+  30  1001  10                 ! zsrg1, xsrg1,src_int (grid points)
+  2                            ! isource
+  15.0                         ! freq0 (Hz)
+ !=============================
+ !data directory
+ !=============================
+../data/PS_mar/

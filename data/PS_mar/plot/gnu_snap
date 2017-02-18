@@ -1,0 +1,18 @@
+# gnu_map
+unset key
+c=5
+set terminal postscript eps enhanced size 1.001*c, 0.451*c font "Arial, 16"
+set output outputname
+set palette gray
+set cbrange [-1*r:1*r]
+set ylabel "Depth (km)"
+set x2label 'Position (km)'
+set x2tics ('0.0' 1, '2.0' 400,'4.0' 800,'6.0' 1200,'8.0' 1600,'10.0' 2000)
+set ytics ('0.0' 1, '0.5' 100, '1.0' 200,'1.5' 300,'2.0' 400,'2.5' 500)
+
+unset xtics
+set xrange [1:2001]
+set yrange [31:451] reverse
+### plot
+plot inputname binary array=2001x451 scan=yx format="%float"  with image
+#
